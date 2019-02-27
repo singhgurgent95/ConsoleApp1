@@ -10,6 +10,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            var orderProcessor = new OrderProcesor();
+            var order = new OrderedParallelQuery { DatePlaced = DateTime.Now, TotalPrice = 100f };
+            orderProcessor.process(order);
         }
     }
 }
